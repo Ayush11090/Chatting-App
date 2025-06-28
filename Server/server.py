@@ -17,7 +17,7 @@ text_model = AutoModelForSequenceClassification.from_pretrained(text_model_name)
 text_model.eval()
 
 # Load the audio classification model
-audio_model_name = 'D:/Semister 7/Major Project/Project/Messaging App/Server/Model'
+audio_model_name = 'ayushbillade/OffensiveChatDefenderAudio'
 audio_processor = Wav2Vec2FeatureExtractor.from_pretrained(audio_model_name)
 audio_model = Wav2Vec2ForSequenceClassification.from_pretrained(audio_model_name)
 audio_model.eval()
